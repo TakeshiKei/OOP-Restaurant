@@ -27,7 +27,7 @@ public class Chef {
 		System.out.println();
 		System.out.println(name + "'s Cook History: ");
 		for(String history : cookHistory) {
-			System.out.println(history);
+			System.out.println(" - " + history);
 		}
 	}
 

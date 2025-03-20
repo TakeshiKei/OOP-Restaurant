@@ -26,11 +26,13 @@ public class Restaurant {
 	}
 
 	public void showMenu() {
+		System.out.println("Restaurant: " + name);
+		System.out.println();
 		System.out.println("Menus: ");
 		for(Menu menu : menus) {
-			System.out.println(menu.getName());
+			System.out.println(" Category: " + menu.getName());
 			for(Food food : menu.getFoods()) {
-				System.out.println(food.getName() + " - " + food.getPrice());
+				System.out.println("  - " + food.getName() + " - " + food.getPrice());
 			}
 			System.out.println();
 		}
@@ -39,7 +41,7 @@ public class Restaurant {
 	public void showChef() {
 		System.out.println("Chefs: ");
 		for(Chef chef : chefs) {
-			System.out.println(chef.getName());
+			System.out.println(" - " + chef.getName());
 		}
 		System.out.println();
 	}
